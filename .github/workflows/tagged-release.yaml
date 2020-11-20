@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build & Test
-        run: autoreconf -i && .,/configure && make distcheck
+        run: autoreconf -i && ./configure && make distcheck
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
-          files: *.tar.xz
+          files: "*.tar.xz"
