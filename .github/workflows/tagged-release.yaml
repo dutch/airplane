@@ -1,5 +1,5 @@
 ---
-title: tagged-release
+name: tagged-release
 on:
   push:
     tags:
